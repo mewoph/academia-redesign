@@ -1,0 +1,19 @@
+!!! 5
+%html
+  = render_partial 'partials/ascii'
+  %head
+    %title Academia.edu - Responsive Profile
+    %meta{:charset => "utf-8"}
+    %meta{:content => "Middleman", :name => "description"}
+    %meta{:content => "on", "http-equiv" => "cleartype"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %script(src="assets/js/jquery.js")
+    %script(src="assets/js/bootstrap.js")
+    %link{:href => "assets/css/bootstrap.css", :rel => "stylesheet"}
+    %link{:href => "assets/css/style.css", :rel => "stylesheet"}
+    %link{:rel => 'icon', :type => 'image/x-icon', :href => "assets/img/favicon.ico"}
+
+  %body
+    = render_partial 'partials/navbar'
+    = yield
+    = render_partial 'partials/footer'
