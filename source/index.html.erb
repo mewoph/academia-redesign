@@ -12,7 +12,7 @@
 				<li><div class="li-item">Papers</div></li>
 				<li><div class="li-item"><span class="glyphicon glyphicon-plus"></span> Add Section</div></li>
 				<li><div class="li-item"><span class="glyphicon glyphicon-plus"></span> Add Post</div></li>
-				<li><div class="li-item">CV</div></li>
+				<li><a href="http://www.seas.upenn.edu/~voph/ophaswongse.pdf"><div class="li-item">CV</div></a></li>
 			<ul>
 		</div>
 		<div class="col-md-6">
@@ -52,9 +52,26 @@
 				<div class="col-md-12 interests">
 					<div class="panel panel-default">
 						<h4>Research Interests</h4>
-						Aesthetics, 19th-Century Philosophy, Philosophy of Technology, Social Thought, Phenomenology, Metaphilosophy
+						Aesthetics, 19th-Century Philosophy, Philosophy of Technology, Social Thought, Phenomenology, Metaphilosophy, Academia.edu
 					</div>
 				</div>
+			</div>
+
+			<div class="designs">
+				<h2>DESIGNS</h2>
+				<hr/>
+				<ul class="designs-list">
+					<li><a href="http://www.mewoph.com">mewoph.com (Portfolio Site)</a><br/>
+						<div class="design-info">
+							Collection of my design and programming projects
+						</div>
+					</li>
+					<li><a href="http://byecomicsans.mewoph.com">Bye Comic Sans</a>
+						<div class="design-info">
+							A countdown clock to the death of Comic Sans MS
+						</div>
+					</li>
+				</ul>
 			</div>
 
 			<div class="papers">
@@ -67,21 +84,9 @@
 							<a href="#" class="dl">Download (.pdf)</a>
 						</div>
 					</li>
-					<li><a href="#">The Fancy of the Contemplatives: Art and the Absurd</a>
-						<div class="paper-info">
-							<span class="glyphicon glyphicon-eye-open"></span> 137 views
-							<a href="#" class="dl">Download (.pdf)</a>
-						</div>
-					</li>
 					<li><a href="#">Imagination and Ethics in the Age of Information</a>
 						<div class="paper-info">
 							<span class="glyphicon glyphicon-eye-open"></span> 126 views
-							<a href="#" class="dl">Download (.pdf)</a>
-						</div>
-					</li>
-					<li><a href="#">Repetition and the Test of Time</a>
-						<div class="paper-info">
-							<span class="glyphicon glyphicon-eye-open"></span> 102 views
 							<a href="#" class="dl">Download (.pdf)</a>
 						</div>
 					</li>
@@ -107,3 +112,17 @@
 		</div>
 	</div>
 </div>
+
+<script>
+// Source: http://css-tricks.com/snippets/jquery/open-external-links-in-new-window/
+$('a').each(function() {
+   var a = new RegExp('/' + window.location.host + '/');
+   if(!a.test(this.href)) {
+       $(this).click(function(event) {
+           event.preventDefault();
+           event.stopPropagation();
+           window.open(this.href, '_blank');
+       });
+   }
+});
+</script>
