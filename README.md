@@ -1,7 +1,7 @@
-Middleman-Bootstrap3
+Academia.edu Profile Page
 ====================
 
-Middleman-Bootstrap3 is the starting template for Middlemanapp with Twitter Bootstrap 3 as the base. 
+The purpose of this redesign is to make the user experience on Academia.edu profile page consistent across different screen sizes.
 
 
 *Stack
